@@ -20,7 +20,7 @@ const Form = () => {
     <form
       onSubmit={handleSubmit}
       name="searchForm"
-      className="relative w-1/2 mx-auto my-3 border rounded-md">
+      className="relative w-2/3 mx-auto my-3 border rounded-md md:w-1/2">
       <label htmlFor="Search" className="sr-only">
         {" "}
         Search{" "}
