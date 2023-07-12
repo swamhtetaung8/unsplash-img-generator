@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { getImages } from "../services/fetchImages";
 import { useCustomImage } from "../context/ImageContext";
 import { CgSpinner } from "react-icons/cg";
@@ -27,8 +27,8 @@ const Gallery = () => {
         {images.map((image) => (
           <article key={image.id} className="group">
             <img
-              alt="Lava"
-              src={image.urls.small}
+              alt={image.alt_description}
+              src={image.urls.regular}
               className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
             />
 
